@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockeys-Assignment-3</title>
+  <!-- tailwind and daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- manrope google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // 'gradient-start': '#FF8938',
+            // 'gradient-end': '#F00',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!--====================================
+           Navigation part start 
+      =====================================-->
+
+  <div class="container lg:px-24 mx-auto px-8 my-8">
+
+    <div class="navbar">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box lg:w-52">
+            <li><a>Home</a></li>
+            <li>
+              <a>About</a>
+            </li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-ghost lg:text-3xl lg:font-extrabold sm:font-bold sm:text-base sm:gap-4 sm:px-10 capitalize text-[#131318]">Hockey
+          <span class="text-[#FF4240;] -mx-2 sm:text-base font-bold sm:normal-case
+">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-[#FF4240]"><a href="#">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <img class="" src="image/icon.png" alt="">
+
+        <button class="btn btn-secondary bg-[#FF4240]  text-white capitalize py-2 ">Get Ticket</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!--====================================
+           End of Navigation part  
+      =====================================-->
+
+
+  <!--====================================
+           banner part  start
+      =====================================-->
+
+  <div class="container mx-auto lg:px-24 px-8">
+
+    <div class="carousel w-full mb-6 ">
+
+      <div id="slide1" class="carousel-item relative  w-full bg-[url(./image/1.png)] bg-cover bg-no-repeat bg-center">
+
+        <div class="absolute space-x-4 transform -translate-y-1/2 left-5 right-6 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <div id="slide2" class="carousel-item relative w-full bg-[url(./image/india2.webp)] bg-cover bg-no-repeat">
+
+        <div class="absolute space-x-4 transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+
+      <div id="slide3" class="carousel-item relative w-full bg-[url(./image/india3.)] h-svh bg-no-repeat">
+
+        <div class="absolute space-x-4 transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" h-24 lg:w-2/6 px-3 ml-auto p-1.5 bg-black  lg:-translate-y-36 rounded">
+      <h2 class="font-extralight font-3xl text-white text-center my-2">New Delhi, 23rd January 2024</h2>
+      <p class="text-base text-white px-3	">Indian Women's Team all set for FIH Hockey5s Women’s World Cup Oman 2024</p>
+
+    </div>
+
+  </div>
+
+  <!--====================================
+             End of banner part
+        =====================================-->
+
+  <main>
+
+    <!--====================================
+             start Professional Hockeys Club
+        =====================================-->
+
+    <section class="container mx-auto lg:px-24 px-8">
+
+      <section class="text-center my-5">
+        <h2 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">Professional athletes in hockey play
+          for
+          professional teams.
+          They play
+          hockey games in front of audiences and compete
+          against other teams in their league. </p>
+
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+          <!-- card 1 -->
+          <div class="card p-8">
+            <div>
+              <img class="size-20 mx-auto" src="image/red.svg" alt="">
+              <h3 class=" text-xl font-extrabold -translate-y-14">88%</h3>
+            </div>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Prayer Facility</h2>
+              <p class="text-base font-normal text-zinc-600">The Spain team visited the students at the KIIT facility
+                campus today, 31 October, at 10:00 AM during
+                their morning
+                prayers.</p>
+            </div>
+          </div>
+
+
+          <!-- card 2 -->
+          <div class="card p-8">
+            <div>
+              <img class="size-20 mx-auto" src="image/green.svg" alt="">
+              <h3 class=" text-xl font-extrabold -translate-y-14">96%</h3>
+            </div>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Experienced Coach</h2>
+              <p class="text-base font-normal text-zinc-600">Former South Africa international Craig Fulton was named as
+                the new chief coach of the Indian</p>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card p-8">
+
+            <div>
+              <img class="size-20 mx-auto" src="image/yellow.svg" alt="">
+              <h3 class="text-xl font-extrabold -translate-y-14">91%</h3>
+            </div>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Senior Player</h2>
+              <p class="text-base font-normal text-zinc-600">India captain Harmanpreet Singh and Amit Rohidas will among
+                the top stars to feature in the senior
+                Nationals hockey.</p>
+            </div>
+          </div>
+
+
+          <!-- card 4 -->
+          <div class="card p-8">
+
+            <div>
+              <img class="size-20 mx-auto" src="image/blue.png" alt="">
+              <h3 class="text-xl font-extrabold -translate-y-14">81%</h3>
+            </div>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Training Ground</h2>
+              <p class="text-base font-normal text-zinc-600">This is a list of hockey grounds in India that have been
+                used for major hockey matches. Contents. 1
+                Stadium; 2 Hockey
+                World Cup.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--====================================
+             End of Professional Hockeys Club
+        =====================================-->
+
+
+
+
+      <!-- start's Program Sections ------------------------------------>
+
+      <section class="container mx-auto lg:px-24 px-8">
+        <div class="text-center my-24">
+          <h2 class="mb-5 text-4xl font-extrabold">Program Sections</h2>
+          <p class="lg:max-w-3xl mb-10 mx-auto text-zinc-600 font-medium">Welcome to the official website of Hockey
+            India.Find all the live updates, schedule, photos, videos and much more.6th Khelo India Youth Games 2023
+            (Women).1st Hockey India
+            Sub Junior Men Academy Championship 2023 - Zone A.1st Hockey India Junior Men Academy Championship 2023 -
+            Zone A </p>
+        </div>
+      </section>
+
+
+      <section class="container mx-auto lg:px-24 px-8 my-52 lg:grid-cols-2  mt-20">
+
+        <div class="grid gap-5">
+
+          <div class="py-5 w-auto h-72 text-center  bg-[url(./image/2.png)] bg-cover bg-no-repeat bg-center">
+            <h3 class="text-white font-extrabold text-xl mt-6 text-start px-5">Junior Program</h3>
+            <p class="text-start px-5 text-base lg:font-medium	text-white">Fans can watch the live telecast of the FIH
+              Hockey Men's Junior World Cup 2023 <br> tournament on the
+              Sports
+              18 Network in
+              India.</p>
+            <div class="relative">
+              <button
+                class=" bg-red-500 hover:bg-blue-700 text-white font-bold text-xl py-2 px-10 rounded  absolute left-5 mt-5">
+                Register Now!
+              </button>
+            </div>
+          </div>
+
+          <div class="py-5 w-auto h-72 text-center bg-[url(./image/3.png)] bg-cover bg-no-repeat bg-center rounded">
+            <h3 class="text-white font-extrabold text-xl mt-6 text-start px-5">Junior Program</h3>
+            <p class="text-start px-5 text-base font-medium	text-white">Fans can watch the live telecast of the FIH
+              Hockey Men's Junior World Cup 2023 <br> tournament on the
+              Sports
+              18 Network in
+              India.</p>
+            <div class="relative">
+              <button
+                class=" bg-red-500 hover:bg-blue-700 text-white font-bold text-xl py-2 px-10 rounded  absolute left-5 mt-5">
+                Register Now!
+              </button>
+            </div>
+          </div>
+
+          <div
+            class=" py-5 w-full h-72 text-center lg:col-span-2 bg-[url(./image/4.png)] bg-cover bg-no-repeat bg-center rounded">
+            <h3 class="text-white font-extrabold text-xl mt-6 text-start px-5">Junior Program</h3>
+            <p class="text-start px-5 text-base font-medium	text-white">Fans can watch the live telecast of the FIH
+              Hockey Men's
+              Junior World
+              Cup 2023
+              <br>
+              tournament on the
+              Sports
+              18 Network in
+              India.
+            </p>
+            <div class="relative">
+              <button
+                class=" bg-red-500 hover:bg-blue-700 text-white font-bold text-xl py-2 px-10 rounded  absolute left-5 mt-5">
+                Register Now!
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <!--  End of the  Program Sections  -->
+
+
+
+
+      <!-- Start  a Our New Product section -->
+      <section class="container mx-auto lg:px-24 px-8">
+        <div class="text-center my-24">
+          <h2 class="mb-5 text-4xl font-extrabold">Our New Products</h2>
+          <p class="lg:max-w-3xl mb-10 mx-auto text-zinc-600 font-medium">RK Mahajan Exports is a renowned Manufacturer
+            of Hockey Equipment in India. We've been assisting the sports goods
+            industry all across the world for nearly a century. Indoor and outdoor hockey sticks, hockey balls, hockey
+            gear, hockey
+            goals & nets, and a variety of other items are all available at reasonable costs. We are one of the
+            industry's top
+            organizations, specializing in providing first-grade hockey equipment. </p>
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-x-10 gap-y-6">
+
+
+          <div class=" 	 ">
+            <div class="hero-content flex-col lg:flex-row ">
+              <img src="image/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup Men's Jacket</h1>
+                <p class="py-2 font-medium text-inherit text-base">Official World Cup 2022 Anthem Jacket
+                  Regular fit
+                  Full zip with stand-up collar
+                  Side A: 100% recycled nylon plain weave
+                  Side B: 100% recycled polyester twill
+
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div>
+            <div class=" hero-content flex-col lg:flex-row ">
+              <img src=" image/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup 2022 Ball Size 5</h1>
+                <p class="py-2 font-medium text-inherit text-base">Official FIFA Qatar World Cup emblem
+                  Anti-puncture bladder
+                  Machine stitched
+                  2.7Mm Shiny/Matte Pvc.Nature takes hold with the official World Cup ball from Australia.
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="hero-content flex-col lg:flex-row ">
+              <img src="image/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup Orange Cap</h1>
+                <p class="py-2 font-medium text-inherit text-base">Officially licensed FIFA Qatar World Cup 2022
+                  merchandise
+                  Velcro fastening
+                  6 panel stitched design
+                  100% Cotton twill
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="hero-content flex-col lg:flex-row ">
+              <img src="image/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup T-Shirt Men's</h1>
+                <p class="py-2 font-medium text-inherit text-base">Officially licensed FIFA Qatar World Cup 2022
+                  merchandise
+                  Chest and sleeve print design
+                  Regular fit
+                  100% Cotton
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="hero-content flex-col lg:flex-row ">
+              <img src="image/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup Aggies Helmet</h1>
+                <p class="py-2 font-medium text-inherit text-base">Peter the Helmet: A fan with cult status · Peter
+                  Dietz is a famous figure at German club Hamburg · The 74-year-old is
+                  ever-present at training
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="hero-content flex-col lg:flex-row  ">
+              <img src="image/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+
+                <div class="my-2 mt-5">
+                  <div class="flex inline gap-2 font-bold text-zinc-300">
+                    <img src="image/star.png" alt="">
+                    <h2>5.0</h2>
+                    <img src="image/eye.png" alt="">
+                    <h3>2.0</h3>
+                    <img src="image/love.png" alt="">
+                    <h4>200</h4>
+                  </div>
+
+                </div>
+
+                <h1 class="text-sm font-extrabold ">World Cup Ball Size 2</h1>
+                <p class="py-2 font-medium text-inherit text-base">Official FIFA Qatar World Cup emblem
+                  Anti-puncture bladder
+                  Machine stitched
+                  2.7Mm Shiny/Matte Pvc ball from Australia.
+                </p>
+
+                <div>
+                  <div class="flex inline gap-2">
+
+                    <h2>Price - $22.00</h2>
+                    <img src="image/shoping.png" alt="">
+                    <h3>Delivery Fee : Free</h3>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- End of new product section -->
+
+
+      <!-- start a Question section -->
+
+      <section class="container mx-auto lg:px-24 px-8">
+        <div class="text-center my-24">
+          <h2 class="mb-5 text-4xl font-extrabold">Clients Question</h2>
+          <p class="lg:max-w-3xl mb-10 mx-auto text-zinc-600 font-medium">When asking our sample what they think about
+            the World Cup this year, we found a mixed bag of responses – only 35% felt
+            positive, and a substantial 38% of responses were negative. </p>
+        </div>
+
+        <div class="lg:grid grid-cols-2 gap-5">
+
+          <div class="mb-10"> <img src="image/11.png" alt=""> </div>
+
+          <div class="">
+            <!-- *--------------1-----------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-lg font-medium">
+                Which teams are taking part? </div>
+              <div class="collapse-content">
+                <p class="text-sm	">A total of 210 teams set out on the journey to the FIFA World
+                  Cup</p>
+              </div>
+            </div>
+            <hr class="bg-red-200 my-1">
+            <!-- *---------------2----------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-lg font-medium">
+                What is the match schedule?
+              </div>
+              <div class="collapse-content">
+                <p>The match schedule is the calendar according to which all matches of the FIFA World Cup Qatar 2022™
+                  will be played.</p>
+              </div>
+            </div>
+            <hr class="bg-red-200 my-1">
+            <!-- *---------------3----------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-lg font-medium">
+                What currency is used for the ticket prices?
+              </div>
+              <div class="collapse-content">
+                <p>All tickets are sold in Qatari riyal (QAR) to both residents of Qatar and international fans, online
+                  and over the
+                  counter at the FIFA Ticketing Centres.</p>
+              </div>
+            </div>
+            <hr class="bg-red-200 my-1">
+            <!-- *-----------4--------------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-lg font-medium">
+                What are the prices for Individual Match Tickets?
+              </div>
+              <div class="collapse-content">
+                <p>Individual Match Tickets prices are informed in the ticketing section of the competition page,
+                  accessible via
+                  FIFA.com/tickets, as well as at the counters of the FIFA</p>
+              </div>
+            </div>
+            <hr class="bg-red-200 my-1">
+            <!-- *----------------5---------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-lg font-medium">
+                When can I apply for tickets?
+              </div>
+              <div class="collapse-content">
+                <p>For the FIFA World Cup Qatar 2022™, there will be three sales phases: Sales Phase (1), Sales Phase
+                  (2) and the
+                  Last-Minute Sales Phase.</p>
+              </div>
+            </div>
+            <hr class="bg-red-200 my-1">
+            <!-- *--------------6-----------*----- -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-lg font-medium">
+                What is a souvenir ticket?
+              </div>
+              <div class="collapse-content">
+                <p>A souvenir ticket is a physical and personalised match <br> ticket that FIFA World Cup Qatar 2022™
+                  mobile
+                  ticket holders can
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--  Start a Get in touch section -->
+
+      <section class="container mx-auto lg:px-24 px-8">
+
+        <div class="text-center my-24">
+          <h2 class="mb-5 text-4xl font-extrabold">Get In Touch</h2>
+          <p class="lg:max-w-3xl mb-10 mx-auto text-zinc-600 font-medium">Welcome to the Indian Hockey ,block b, E14,
+            14, Block E, Mohan Cooperative Industrial Estate, Badarpur, New Delhi, Delhi 110044 </p>
+        </div>
+      </section>
+
+      <section class="container mx-auto lg:px-24 px-8">
+        <div class="grid lg:grid-cols-2 grid-cols-1  bg-stone-100 shadow lg:p-8 rounded">
+
+          <div class="py-5 lg:px-40 rounded">
+            <div class="bg-green-50  w-60 h-40 justify-center text-center">
+              <img class="mx-20 pt-8 py-5" src="image/cell.png" alt="">
+              <p>phone number:</p>
+              <h4 class="font-extrabold text-bold">(+62) 123-321-543</h4>
+            </div>
+
+
+            <div class="my-7">
+              <div class="bg-orange-50  w-60 h-40 justify-center text-center">
+                <img class="mx-20 pt-8 py-5" src="image/sms.png" alt="">
+                <p>phone number:</p>
+                <h4 class="font-extrabold text-bold">(+62) 123-321-543</h4>
+              </div>
+
+
+
+              <div class="my-7">
+                <div class="bg-yellow-50  w-60 h-40 justify-center text-center">
+                  <img class="mx-20 pt-8 py-5" src="image/location.png" alt="">
+                  <p>phone number:</p>
+                  <h4 class="font-extrabold text-bold">(+62) 123-321-543</h4>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="">
+
+
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 my-8">
+
+              <div>
+                <h2 class="font-bold	text-lg text-black">Your Name</h2>
+                <input type="" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              </div>
+              <div>
+                <h3 class="font-bold	text-lg text-black">Your Email</h3>
+                <input type="" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              </div>
+              <div>
+                <h3 class="font-bold	text-lg text-black">Subject</h3>
+                <input type="" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              </div>
+
+              <div>
+
+                <h3 class="font-bold	text-lg text-black">Phone Number </h3>
+                <input type="" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              </div>
+
+
+            </div>
+
+            <div>
+              <label for="message" class=" block mb-2 text-lg font-bold text-gray-900 dark:text-white ">Your
+                Message</label>
+              <textarea id="message" rows="4"
+                class="block p-2.2 h-52 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Write your thoughts here..."></textarea>
+
+              <div class="my-4 grid lg:grid-cols-full grid-cols-1"><button type="submit"
+                  class="inline-flex items-center lg:px-44 px-12 py-2.5 text-base font-bold lg:text-center text-white bg-red-500 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+                  Send message
+                </button></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="lg:bg-stone-100  bg-orange-100 mb-2 h-[80px] lg:mb-5 text-center items-center">
+          <h2 class="font-extrabold text-lg	">Social Media</h2>
+          <img class="mx-auto pt-2" src="image/Social.png" alt="">
+        </div>
+      </section>
+
+      <!--  End of Get in touch section -->
+
+  </main>
+  <!-- footer section start -->
+
+  <footer class=" container mx-auto lg:px-24 px-8 bg-black mt-10">
+
+    <div class="footer pt-10 text-base-content ">
+
+      <div class="">
+        <nav class=" mx-12">
+          <header class=" font-extrabold text-xl text-white">Get In Touch</header>
+          <p class="text-slate-400	font-medium	 text-base	">Dit amet consectetur. Condimentum adipiscing <br>
+            aliquam turpis placerat dolor. <br>Purus urna in sit
+            nullam proin.
+          </p>
+          <div class="flex gap-3 my-3 ">
+            <img src="image/email.png" alt="">
+            <h3 class="text-base font-medium text-slate-500 ">hockeys@support.com</h3>
+          </div>
+          <div class="flex gap-3">
+            <img src="image/call.png" alt="">
+            <h4 class="text-base font-medium text-slate-500">(+62) 123-321-543</h4>
+          </div>
+        </nav>
+
+      </div>
+      <div class="grid grid-cols-2 mx-auto gap-16 lg:gap-32">
+        <nav class="grid grid-cols">
+          <header class="text-lg font-bold text-yellow-50">Services</header>
+
+          <a class="link link-hover font-medium	text-base text-slate-500">About us</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">Leadership</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">Careers</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">News & Article</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">Legal Notice</a>
+        </nav>
+
+        <nav class="grid grid-cols">
+          <header class=" text-lg font-bold text-yellow-50">Support</header>
+          <a class="link link-hover font-medium	text-base text-slate-500">Help Center</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">FAQ</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">Ticket Support</a>
+          <a class="link link-hover font-medium	text-base text-slate-500">Contact Us</a>
+        </nav>
+      </div>
+
+      <nav class="mx-auto">
+        <header class="text-lg font-bold text-yellow-50">Services</header>
+        <a class="link link-hover font-medium	text-base text-slate-500">Academy</a>
+        <a class="link link-hover font-medium	text-base text-slate-500">Group Lesson</a>
+        <a class="link link-hover font-medium	text-base text-slate-500">Hockeys for kids</a>
+        <a class="link link-hover font-medium	text-base text-slate-500">Hockeys for Adult</a>
+
+      </nav>
+
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
